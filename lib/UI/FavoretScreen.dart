@@ -12,8 +12,24 @@ class _FavoretScreenState extends State<FavoretScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Center(
-        child: Text('FavoretScreen'),
+      appBar: AppBar(
+        title: Text('Favret'),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.white,
+      ),
+       backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(height: 30,),
+              Container(
+
+              )
+            ],
+          ),
+        ),
       ),
     );
   }

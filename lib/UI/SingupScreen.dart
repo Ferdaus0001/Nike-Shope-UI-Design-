@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:nikeshope/UI/LoginScreen.dart';
 
+import 'NavegationsScreen.dart';
+
 class SingupScreen extends StatefulWidget {
   const SingupScreen({super.key});
 
@@ -68,7 +70,7 @@ class _SingupScreenState extends State<SingupScreen> {
                     ),
                     SizedBox(height: 50,),
                     ElevatedButton(onPressed: (){
-                      Get.off(SingupScreen());
+                      Get.off(NavegationsScreen());
                     }, child: Text(' Singup  ',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                       style: ElevatedButton.styleFrom(minimumSize: Size(470, 60),
                         backgroundColor: Colors.blue,

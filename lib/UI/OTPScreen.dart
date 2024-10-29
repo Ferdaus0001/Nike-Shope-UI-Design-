@@ -11,6 +11,14 @@ class OTPScreen extends StatefulWidget {
 class _OTPScreenState extends State<OTPScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold();
+    return  Scaffold(
+      appBar: AppBar(
+        title: Text('OTP '),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.white,
+
+      ),
+    );
   }
 }

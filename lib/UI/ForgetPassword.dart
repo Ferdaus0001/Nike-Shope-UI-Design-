@@ -68,6 +68,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 } : null,
                 child: Text(' Send Code ? ',style: TextStyle(fontSize: 19,color: Colors.white),),
               ),
+
             ],
           ),
         ),

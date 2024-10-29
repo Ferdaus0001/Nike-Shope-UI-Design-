@@ -7,6 +7,7 @@ import 'package:nikeshope/NikeHomeScreen.dart';
 import 'package:nikeshope/UI/SingupScreen.dart';
 
 import 'ForgetPassword.dart';
+import 'NavegationsScreen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -60,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   SizedBox(height: 50,),
               ElevatedButton(onPressed: (){
-                Get.off(NikeHomeScreens());
+                Get.off(NavegationsScreen());
               }, child: Text(' Login ',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
                 style: ElevatedButton.styleFrom(minimumSize: Size(470, 60),
                   backgroundColor: Colors.blue,
