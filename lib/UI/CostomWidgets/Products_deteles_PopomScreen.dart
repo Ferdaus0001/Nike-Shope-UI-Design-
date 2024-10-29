@@ -109,7 +109,7 @@ List<Color> colorsList = [
 
                        ],
                      ),
-                     SizedBox(height: 20,),
+                     SizedBox(height: 10,),
                      InkWell(
                        onTap: (){
                          Get.to(CardScreen());

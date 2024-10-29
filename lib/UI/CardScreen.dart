@@ -116,10 +116,10 @@ class _CardScreenState extends State<CardScreen> {
 
                 ],
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 5,),
               InkWell(
                 onTap: (){
-                  Get.to(Paymetn_mathousd());
+                  Get.to(PaymentMethod());
                 },
                 child: ContinerButtonMudelsScreen(
 
