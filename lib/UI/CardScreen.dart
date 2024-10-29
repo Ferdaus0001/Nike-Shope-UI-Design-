@@ -1,8 +1,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'CostomWidgets/Continers_button_modes.dart';
+import 'Paymetn_mathousd.dart';
 class CardScreen extends StatefulWidget {
  List CardImageList = [
    'assets/image4.jpg',
@@ -116,9 +118,11 @@ class _CardScreenState extends State<CardScreen> {
               ),
               SizedBox(height: 10,),
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Get.to(Paymetn_mathousd());
+                },
                 child: ContinerButtonMudelsScreen(
-                  
+
                   continerwidth: MediaQuery.of(context).size.width,
                   itex:'Checkout',
                   bgColors: Colors.blue,
