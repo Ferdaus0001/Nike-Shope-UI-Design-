@@ -25,9 +25,10 @@ class _FavoretScreenState extends State<FavoretScreen> {
   ];
   List<String> imagtelist2 = [
 
+
+    'assets/pexels-n-voitkevich-8939790.jpg',
+    'assets/pexels-n-voitkevich-8939790.jpg',
     'assets/pexels-tim-douglas-6567418.jpg',
-    'assets/pexels-n-voitkevich-8939790.jpg',
-    'assets/pexels-n-voitkevich-8939790.jpg',
     'assets/image3.jpg',
     'assets/image4.jpg',
     'assets/pexels-gabriella-ally-3664539-13733587.jpg',
