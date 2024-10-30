@@ -28,11 +28,11 @@ class _NikeHomeScreensState extends State<NikeHomeScreens> {
   ];
   List<dynamic> prodactitmes = [
     ' Walm Ziper ',
-    ' Ferdaus 1 ',
-    ' Ferdaus 2 ',
-    ' Ferdaus 3',
-    'ferdaus4 ',
-    'ferdaus5 '
+    ' Bule Jacket   ',
+    '  White Hodey  2 ',
+    ' Women  T Shart  3',
+    'Red Dresses  ',
+    ' White pant '
   ];
   List princes = [
     '\$300',
@@ -89,7 +89,7 @@ class _NikeHomeScreensState extends State<NikeHomeScreens> {
                             ),
                             prefixIcon: Icon(
                               CupertinoIcons.search,
-                              color: Colors.orangeAccent,
+                              color: Colors.red,
                             ),
                             border: OutlineInputBorder(
                               borderSide: BorderSide.none,
@@ -113,9 +113,12 @@ class _NikeHomeScreensState extends State<NikeHomeScreens> {
                         ],
                       ),
                       child: Center(
-                        child: Icon(
-                          CupertinoIcons.bell,
-                          color: Colors.orangeAccent,
+                        child: Badge(
+                          label: Text('5'),
+                          child: Icon(
+                            CupertinoIcons.bell,
+                            color: Colors.red,
+                          ),
                         ),
                       ),
                     )
@@ -140,7 +143,7 @@ class _NikeHomeScreensState extends State<NikeHomeScreens> {
                     ],
                   ),
                   child: Image.asset(
-                      'assets/undraw_undraw_applications_vaxx_(1)_p5j1.png'),
+                      'assets/shopping-transparent-background-5.png'),
                 ),
                 SizedBox(
                   height: 7,
@@ -393,7 +396,72 @@ class _NikeHomeScreensState extends State<NikeHomeScreens> {
                           ),
                         );
                       }),
-                )
+                ),
+                Container(height: 270,
+                  color: Colors.white,
+
+                  child:  ListView.builder(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: imagtelist.length,
+                      itemBuilder: (context ,indext ){
+                        return Container(
+                          margin: EdgeInsets.only(left: 14,top: 4),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              SizedBox(height: 200,
+                                child: Stack(
+                                  children: [
+                                    InkWell(
+                                      onTap: (){},
+                                      child:  ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(imagtelist[indext]),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 10,
+                                      left: 10,
+                                      top: 5,
+                                      child: Container(
+                                        height: 30,
+                                        width: 30,
+                                        decoration: BoxDecoration(
+                                          color: Colors.transparent,
+                                          borderRadius: BorderRadius.circular(22),
+                                        ),
+                                        alignment: Alignment.topRight,
+                                        child:   Icon(Icons.favorite,color: Colors.red,),
+
+
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              SizedBox(height: 10,),
+                              Text(prodactitmes[indext],style: TextStyle(fontWeight: FontWeight.bold),),
+                              Row(
+                                children: [
+                                  Icon(Icons.star,color: Colors.orangeAccent,size: 20,),
+                                  SizedBox(width: 2,),
+                                  Text(
+                                      '( '+reveus[indext]+')'
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Text(princes[indext],style: TextStyle(fontWeight: FontWeight.bold,color: Colors.blue,fontSize: 17),),
+                                  SizedBox(width: 2,),
+                                ],
+                              ),
+
+                            ],
+                          ),
+                        );
+                      }),
+
+                ),
+                SizedBox(height: 10,),
               ],
             ),
           ),

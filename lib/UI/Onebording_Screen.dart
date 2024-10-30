@@ -45,7 +45,7 @@ class _OnebordingScreenState extends State<OnebordingScreen> {
           title: 'Best Deals  ',
           body: 'Buy you T Shart ndustry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s  when an unknown prin  ',
           image: Image.asset(
-            'assets/undraw_undraw_applications_vaxx_(1)_p5j1.png',
+            'assets/splash3.png',
             width: 200,
           ),
           decoration: PageDecoration(),
@@ -64,12 +64,13 @@ class _OnebordingScreenState extends State<OnebordingScreen> {
             'assets/undraw_undraw_choose_color_uotg_(1)_5ah4.png',
             width: 200,
           ),
+
           decoration: PageDecoration(),
-          footer: Padding(padding: EdgeInsets.only(left: 15,right:15, top: 120),
+          footer: Padding(padding: EdgeInsets.only(left: 15,right:15, top: 160),
             child: ElevatedButton(onPressed: (){
               Get.off(LoginScreen());
             }, child: Text('Lats a Shop',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-              style: ElevatedButton.styleFrom(minimumSize: Size(300, 60),
+              style: ElevatedButton.styleFrom(minimumSize: Size(300, 66),
                     backgroundColor: Colors.blue,
 
               ),

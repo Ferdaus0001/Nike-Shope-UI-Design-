@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds:5), () {
-      Get.to(OnebordingScreen());
+      Get.off(OnebordingScreen());
     });
 
   }
